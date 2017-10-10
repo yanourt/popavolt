@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.vidHeader {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+  .vidHeader video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    max-height: 142vmax; }
+  .vidHeader .cover {
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .vidHeader .cover p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      line-height: 3em;
+      color: rgba(255, 255, 255, 0.5); }
+      .vidHeader .cover p span {
+        color: white; }

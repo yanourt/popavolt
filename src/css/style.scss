@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.main{
+    height: 100vh;
+}
+
 .vidHeader{
     position: relative;
     height: 100vh;
@@ -16,11 +20,11 @@
         min-height: 100%;
         width: auto;
         height: auto;
-        z-index: 1;
+        z-index: 5;
         max-height: 142vmax;
     }
     .cover{
-        z-index: 2;
+        z-index: 6;
         position: absolute;
         background-color: rgba(0, 0, 0, 0.4);
         top: 0;
@@ -32,7 +36,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 50px;
+            font-size: 30px;
             font-family: 'Open Sans', sans-serif;
             text-transform: uppercase;
             letter-spacing: 10px;
@@ -43,4 +47,60 @@
             }
         }
     }
+}
+
+
+
+.afterHead{
+    position: relative;
+    margin-top: 100vh;
+    height: 3000px;
+}
+
+
+
+.seedCont{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    // video{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 50%;
+    //     transform: translate(-50%, 0);
+    //     max-height: 35vh;
+    //     height: auto;
+    //     width: auto;
+    // }
+    &.unfixed{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+
+.seed-loop{
+    &.hidden{
+        display: none;
+    }
+}
+
+.seed{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 225px;
+    width: 75px;
+    // max-height: 30vh;
+    // width: auto;
+    background-image: url('../img/sheet3.jpg');
+    background-position: 0px, -120px;
+
 }
